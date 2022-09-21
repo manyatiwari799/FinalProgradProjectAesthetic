@@ -3,14 +3,18 @@
 <head>
    <meta charset="UTF-8">
     <meta name="viewpoint" content="width-device-screen, initial-scale=1.0">
+    <meta name="Generator" content="EditPlus">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="description" content="">
    <title>Shopping Cart - Potions</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="addtocart.css">
     
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,700;1,100;1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+<script type="text/javascript" src="addToCart.js"></script>
 </head>
 <body>
     
@@ -28,43 +32,102 @@
                 </tr>
             </table>
             
-            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            
     </div>
         
     </div>
-   <!----account page---->
-    <div class="account-page">
-        <div class="container">
-           <div class="row">
-               <div class="col-2">
-                   <img src="images/WhatsApp Image 2022-05-26 at 5.03.04 AM (2).jpeg" width="100%">
-               </div>
-                <div class="col-2">
-                   <div class="form-container">
-                       <div class="form-btn">
-                           <span onclick="login()">Login</span>
-                           <span onclick="register()">Register</span>
-                           <hr id="Indicator">
-                       </div>
-                       <form id="LoginForm">
-                         <input type="text" placeholder="Username">
-                           <input type="password" placeholder="Password">
-                           <button type="submit" class="btn">Login</button>
-                           <a href="">Forgot Password</a>
-                       </form>
-                       <form id="RegForm">
-                         <input type="text" placeholder="Username">
-                           <input type="email" placeholder="Email">
-                           <input type="password" placeholder="Password">
-                           <button type="submit" class="btn">Register</button>
-                           
-                       </form>
-                    </div>
-               </div>
-            </div>
-        </div>
+   <!--------cart item details----------> 
+   <div class="cartpage" id="CART">
+    <div class="title">CART</div><hr/>
+    <div id="title"></div>
+</div> 
+<div class="container">
+    <div class="card" id="item1">
+        <img src="images/4.png">
+        <div class="title">Brown Lip Balm</div>
+        
+        <button onclick="addToCart(item1)">Add To Cart</button>
     
     </div>
+    <div class="card" id="item2">
+        <img src="images/photo1638100250 (16).png">
+        <div class="title">Lip Gloss</div>
+        
+        <button onclick="addToCart(item2)">Add To Cart</button>
+    
+    </div>
+    <div class="card" id="item3">
+        <img src="images/combo.jpeg">
+        <div class="title">Lip Gloss</div>
+        
+        <button onclick="addToCart(item3)">Add To Cart</button>
+    
+    </div>
+    <div class="card" id="item4">
+        <img src="images/bloodymary.jpeg">
+        <div class="title">Lip Gloss</div>
+        
+        <button onclick="addToCart(item4)">Add To Cart</button>
+    
+    </div>
+    <div class="card" id="item5">
+        <img src="images/WhatsApp Image 2022-05-26 at 5.03.04 AM (1).jpeg">
+        <div class="title">Lip Gloss</div>
+        
+        <button onclick="addToCart(item5)">Add To Cart</button>
+    
+    </div>
+    <div class="card" id="item6">
+        <img src="images/valentine gloss.jpeg">
+        <div class="title">Lip Gloss</div>
+        
+        <button onclick="addToCart(item6)">Add To Cart</button>
+    
+    </div>
+    <div class="card" id="item7">
+        <img src="images/photo1638100255 (13).jpeg">
+        <div class="title">Lip Gloss</div>
+        
+        <button onclick="addToCart(item7)">Add To Cart</button>
+    
+    </div>
+    <div class="card" id="item8">
+        <img src="images/photo1625956097 (1).jpeg">
+        <div class="title">Lip Gloss</div>
+        
+        <button onclick="addToCart(item8)">Add To Cart</button>
+    
+    </div>
+    <div class="card" id="item9">
+        <img src="images/photo1638100251 (10).png">
+        <div class="title">Lip Gloss</div>
+        
+        <button onclick="addToCart(item9)">Add To Cart</button>
+    
+    </div>
+    <div class="card" id="item10">
+        <img src="images/2.png">
+        <div class="title">Lip Gloss</div>
+        
+        <button onclick="addToCart(item10)">Add To Cart</button>
+    
+    </div>
+    <div class="card" id="item11">
+        <img src="images/gift box.png">
+        <div class="title">Lip Gloss</div>
+        
+        <button onclick="addToCart(item11)">Add To Cart</button>
+    
+    </div>
+    <div class="card" id="item12">
+        <img src="images/photo1633694275.jpeg">
+        <div class="title">Lip Gloss</div>
+        
+        <button onclick="addToCart(item12)">Add To Cart</button>
+    
+    </div>
+    </div>
+
    <!--------footer---------->  
   <div class="footer">
       <div class="container">
@@ -119,22 +182,8 @@
             }
         }
     </script>
-<!--------js for toggle form--------->
-    <script>
-    var LoginForm = document.getElementById("LoginForm");
-    var RegForm = document.getElementById("RegForm");
-    var Indicator = document.getElementById("Indicator");
-        function register(){
-            RegForm.style.transform = "translateX(0px)";
-            LoginForm.style.transform = "translateX(0px)";
-            Indicator.style.transform = "translateX(100px)";
-        }
-        function login(){
-            RegForm.style.transform = "translateX(300px)";
-            LoginForm.style.transform = "translateX(300px)";
-            Indicator.style.transform = "translateX(0px)";
-        }
-    </script>
+
+    
     
     
     

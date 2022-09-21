@@ -32,39 +32,21 @@
     </div>
         
     </div>
-   <!----account page---->
-    <div class="account-page">
-        <div class="container">
-           <div class="row">
-               <div class="col-2">
-                   <img src="images/WhatsApp Image 2022-05-26 at 5.03.04 AM (2).jpeg" width="100%">
-               </div>
-                <div class="col-2">
-                   <div class="form-container">
-                       <div class="form-btn">
-                           <span onclick="login()">Login</span>
-                           <span onclick="register()">Register</span>
-                           <hr id="Indicator">
-                       </div>
-                       <form id="LoginForm">
-                         <input type="text" placeholder="Username">
-                           <input type="password" placeholder="Password">
-                           <button type="submit" class="btn">Login</button>
-                           <a href="">Forgot Password</a>
-                       </form>
-                       <form id="RegForm">
-                         <input type="text" placeholder="Username">
-                           <input type="email" placeholder="Email">
-                           <input type="password" placeholder="Password">
-                           <button type="submit" class="btn">Register</button>
-                           
-                       </form>
-                    </div>
-               </div>
-            </div>
-        </div>
-    
+   <!--------main---------->  
+</div>
+<section class="about">
+<div class="row">
+    <div class="col-2">
+        <h1>Welcome To<br>POTIONS</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="store.html" class="btn">Explore Our Products &#8594;</a>
     </div>
+    <div class="col-2">
+        <img src="images/photo1625956097 (2).jpeg">
+    </div>
+</div>
+</section>
+
    <!--------footer---------->  
   <div class="footer">
       <div class="container">
@@ -119,22 +101,8 @@
             }
         }
     </script>
-<!--------js for toggle form--------->
-    <script>
-    var LoginForm = document.getElementById("LoginForm");
-    var RegForm = document.getElementById("RegForm");
-    var Indicator = document.getElementById("Indicator");
-        function register(){
-            RegForm.style.transform = "translateX(0px)";
-            LoginForm.style.transform = "translateX(0px)";
-            Indicator.style.transform = "translateX(100px)";
-        }
-        function login(){
-            RegForm.style.transform = "translateX(300px)";
-            LoginForm.style.transform = "translateX(300px)";
-            Indicator.style.transform = "translateX(0px)";
-        }
-    </script>
+
+    
     
     
     

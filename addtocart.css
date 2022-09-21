@@ -373,7 +373,40 @@ td:last-child{
 th:last-child{
     text-align: right;
 }
-
+.card{
+    border: 1px solid black;
+    width: max-content;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+}
+.card img{
+    width: 300px;
+    padding: 5px;
+}
+.title{
+    font-weight: bold;
+    margin: 20px;
+}
+button{
+    border: 2px solid #48162c;
+    background-color: #822F67;
+    color: white;
+    font-weight: bold;
+    margin: 20px;
+    padding: 5px 10px;
+}
+.cartpage{
+    width: 250px;
+    float: right;
+    text-align: center;
+    border: 1px solid black;
+    overflow-y: scroll;
+    height: 100%;
+}
+.cartImg > img{
+    width: 200px;
+}
 /*-------account-page--------*/
 .account-page{
     padding: 50px 0;
@@ -443,25 +476,7 @@ form a{
     transform: translateX(100px);
     transition: transform 1s;
 }
-.about{
-    width: 100%;
-    padding: 78px 0px;
-    background: linear-gradient(#ffcae8,#fff);
-}
-.about img{
-    height: auto;
-    width: px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.about-text{
-    width: 700px;
-    max-width: 95%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
+
 /*----------media query for less than 600 screen size----------*/
 @media only screen and (max-width: 600px){
     .row{
